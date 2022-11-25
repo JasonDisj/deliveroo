@@ -1,6 +1,7 @@
 import { View, Text, TouchableOpacity, Image } from "react-native";
 import React from "react";
 import Ionicons from "@expo/vector-icons/Ionicons";
+import { urlFor } from "../sanity";
 import { useNavigation } from "@react-navigation/native";
 
 const RestaurantCard = ({
@@ -15,11 +16,14 @@ const RestaurantCard = ({
   longitude,
   latitude,
 }) => {
-  const navigation = useNavigation;
+  const navigation = useNavigation();
 
   return (
     <TouchableOpacity className="bg-white mr-3 shadow">
-      <Image source={{ uri: imgUrl }} className="h-36 w-64 rounded-sm" />
+      <Image
+        source={{ uri: urlFor(imgUrl).url() }}
+        className="h-36 w-64 rounded-sm"
+      />
 
       <View className="px-3 pb-4">
         <Text className="font-bold text-lg pt-2">{title}</Text>
