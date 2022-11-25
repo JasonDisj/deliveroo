@@ -12,7 +12,7 @@ export default {
     {
       name: "short_description",
       type: "string",
-      title: "Restaurant description",
+      title: "Short description",
       validation: (Rule) => Rule.max(200),
     },
     {
@@ -21,12 +21,12 @@ export default {
       title: "Image of the Restaurant",
     },
     {
-      name: "latitude",
+      name: "lat",
       type: "number",
       title: "Latitude of the Restaurant",
     },
     {
-      name: "longitude",
+      name: "long",
       type: "number",
       title: "Longitude of the Restaurant",
     },
