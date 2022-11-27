@@ -27,8 +27,11 @@
 ## Setup
 
 Make sure that you're running Node version 12 or higher.
+
 Install Expo CLI with `npm install -g expo-cli`.
+
 Install dependencies with `npm install`.
+
 Install Sanity.io with `npm install -g @sanity/cli`.
 
 ## Running Front-end
